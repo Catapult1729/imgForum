@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f5f7;
+  text-align: center;
+  font-family: monospace;
+}
+
+#header {
+  width: 100%;
+  height: 10dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #bfdfff;
+  overflow: hidden;
+
+}
+
+#header>span:nth-child(1) {
+  display: block;
+  margin-top: 2dvh;
+  font-size: 5dvh;
+  font-family: Kosugi Maru;
+  font-weight: bold;
+}
+
+#header a {
+  color: slateblue;
+  text-decoration: none
+}
+
+#header>span:nth-child(2) {
+  display: block;
+  font-size: 1.5dvh;
+  white-space: nowrap;
+  font-family: initial;
+}
+
+#dropbox{
+  margin-top: 5dvh;
+  width: 60%;
+  height: 30dvh;
+  border-radius: 5dvh;
+  border: rgba(127, 127, 127, 0.9) dashed 1dvh;
+  background-color: rgba(255, 255, 255, 0.9);
+  position:relative;
+  overflow: hidden;
+}
+
+#cover{
+  position: absolute;
+  width: 100%;
+  height: 30dvh;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  display:none;
+}
+
+#form{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 30dvh;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#label{
+  position: absolute;
+  padding: 4dvh 5% 4dvh 5%;
+  height: 2dvh;
+  font-weight: bold;
+  color: white;
+  background: dodgerblue;
+  font-size: 2dvh;
+  border-radius: 2dvh;
+  text-align: center;
+  display: inline-block;
+  margin-top: -20dvh;
+  transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#label:hover{
+  filter: brightness(110%);
+}
+
+#description{
+  position: absolute;
+  content: "またはファイルをドロップ";
+  height: 1.5dvh;
+  font-weight: bold;
+  color: #aaa;
+  font-size: 1.5dvh;
+  text-align: center;
+  display: inline-block;
+  pointer-events: none;
+  margin-top: -8dvh;
+  transform: translateX(-50%);
+}
+
+#result{
+  margin-bottom: 30dvh;
+  width: 60%;
+  height: 5dvh;
+  border-radius: 2dvh;
+  border: #ccc solid 0.5dvh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#result span{
+  color:#777;
+  font-weight: bold;
+  display: block;
+  height: 3dvh;
+  font-size:3dvh;
+  padding: 1dvh;
+  white-space: nowrap;
+}
+#flexbox{
+  width: 100%;
+  height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
